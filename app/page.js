@@ -46,13 +46,13 @@ export default function Home() {
     <div className="bg-gray-200 font-sans leading-normal tracking-normal">
       <Section headline="hypa.net" text="We're web developers and a web host but we don't sell hosting. If you know us, please feel free to reach out." />
 
-      <Section bgColor="gray-200" text="Some of the sites we've built or host:">
+      {/* <Section bgColor="gray-200" text="Some of the sites we've built or host:">
         <div className="flex flex-wrap -mx-4 mt-12">
           <Card number="01" headline="Site 1" text="Nulla sollicitudin libero vel vulputate tristique. Fusce sit amet justo nisl. Nullam ultrices augue." link="https://google.com" />
           <Card number="02" headline="Site 2" text="Phasellus eu neque massa. Ut hendrerit interdum elit, sed commodo magna convallis quis. Praesent id." link="https://google.com" />
           <Card number="03" headline="Site 3" text="Cras quis scelerisque enim, et sagittis ligula. Maecenas ut lacinia nibh. Aliquam volutpat molestie." link="https://google.com" />
         </div>
-      </Section>
+      </Section> */}
 
       <Section text={`© ${new Date().getFullYear()} hypa.net`} />
     </div>
