@@ -1,8 +1,8 @@
 import './main.css'
 
 export const metadata = {
-  title: 'mvsizzle.com',
-  description: 'A *private* web host.',
+  title: 'hypa.net',
+  description: 'Web development and private web hosting.',
 }
 
 export default function RootLayout({ children }) {
