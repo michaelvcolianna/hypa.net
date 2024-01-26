@@ -1,8 +1,8 @@
 export default function manifest() {
   return {
-    name: 'mvsizzle.com',
-    short_name: 'mvsizzle.com',
-    description: 'A *private* web host.',
+    name: 'hypa.net',
+    short_name: 'hypa.net',
+    description: 'Web development and private web hosting.',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
