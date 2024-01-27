@@ -5,10 +5,10 @@ export const metadata = {
   description: 'Web development and private web hosting.',
 }
 
-const Section = ({ bgColor = 'white', headline = null, text = null, children }) => {
+const Section = ({ grayBackground = false, headline = null, text = null, children }) => {
   if(headline || text || children) {
     return (
-      <section className={`bg-${bgColor} py-20`}>
+      <section className={`${grayBackground ? 'bg-gray-200' : 'bg-white'} py-20`}>
         <div className="container mx-auto px-4">
           {(headline || text) && (
             <div className="max-w-2xl mx-auto text-center">
@@ -70,7 +70,7 @@ export default function Home() {
 
       <Section headline="hypa.net" text="We're web developers and a web host but we don't sell hosting. If you know us, please feel free to reach out." />
 
-      <Section bgColor="gray-200" text="Some of the sites we've built or host:">
+      <Section grayBackground={true} text="Some of the sites we've built or host:">
         <div className="flex flex-wrap -mx-4 mt-12">
           <Card number="01" headline="Kiwis by Beat!" text="A collection of artwork and comics by Ryan Armand." link="https://kiwisbybeat.net" />
           <Card number="02" headline="The Guild Library Appendix" text="A wiki-style appendix for a novel by our owner." link="https://guildlibrary.colianna.net" />
@@ -79,7 +79,13 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section text={`© ${new Date().getFullYear()} hypa.net`} />
+      <Section text={`© ${new Date().getFullYear()} hypa.net`}>
+        {process.env.NODE_ENV === 'production' && (
+          <div className="container mx-auto px-4 text-center text-gray-600 text-sm font-bold underline">
+            <a href="https://archive.hypa.net">Archived version of the site from 2006</a>
+          </div>
+        )}
+      </Section>
     </div>
   )
 }
