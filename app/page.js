@@ -3,6 +3,7 @@ import './main.css'
 export const metadata = {
   title: 'hypa.net',
   description: 'Web development and private web hosting.',
+  robots: 'noai, noimageai'
 }
 
 const Section = ({ grayBackground = false, headline = null, text = null, children }) => {
@@ -13,7 +14,7 @@ const Section = ({ grayBackground = false, headline = null, text = null, childre
           {(headline || text) && (
             <div className="max-w-2xl mx-auto text-center">
               {headline && <h1 className="text-4xl font-bold mb-6">{headline}</h1>}
-              
+
               {text && <p className="text-gray-600 mb-12">{text}</p>}
             </div>
           )}
