@@ -30,10 +30,10 @@
   <Section grayBackground={true} text="Some of the sites we've built or host:">
     <div class="flex flex-wrap -mx-4 mt-12">
       <Card number="01" headline="Kiwis by Beat!" text="A collection of artwork and comics by Ryan Armand." link="https://kiwisbybeat.net" />
-      <Card number="02" headline="The Guild Library Appendix" text="A wiki-style appendix for a novel by our owner." link="https://guildlibrary.colianna.net" />
+      <Card number="02" headline="The Guild Library Appendix" text="A wiki-style appendix for a novel by our owner." link="https://appendix.mvc.ink" />
       <Card number="03" headline="Juniper & Elm Quilts" text="A portfolio site for a person who designs and makes custom quilts." link="https://juniperandelmquilts.com" />
       <Card number="04" headline="Dungeon.ly" text="An online helper for dungeon masters running 5E D&D games. Public registration is closed but the site has character sheets, dice rollers, and a combat tracker." link="https://dungeon.ly" />
-      <Card number="05" headline="mvc.ink" text="Our owner's website, a single page author site." link="https://mvc.ink" />
+      <Card number="05" headline="mvc.ink" text="Our owner's website, which he turned into a Geocities-style old school site." link="https://mvc.ink" />
     </div>
   </Section>
 
